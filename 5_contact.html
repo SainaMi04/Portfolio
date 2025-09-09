@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact - Mirado</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="header-top">
+  <div class="header-inner">
+    <div class="brand">
+      <span class="brand-first">Saina <strong>Mirado</strong></span>
+      <span class="brand-last">ANDRIASATARINTSOA</span>
+    </div>
+
+    <nav class="main-nav">
+      <a href="index.html" class="nav-link">Accueil</a>
+      <a href="2_apropos.html" class="nav-link">À propos</a>
+      <a href="3_projets.html" class="nav-link">Projets</a>
+      <a href="4_competences.html" class="nav-link">Compétences</a>
+      <a href="5_contact.html" class="nav-link active">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="contact-area">
+  <h2 class="page-title center-title large-title">Vous avez un projet en tête ?</h2>
+  <p class="contact-sub">N'hésitez pas à me <span class="link-highlight">contacter</span></p>
+
+  <form id="contact-form" class="contact-form" novalidate>
+    <div class="row-two">
+      <div class="field">
+        <label for="prenom">Votre prénom</label>
+        <input id="prenom" name="prenom" type="text" placeholder="Prénom" required>
+      </div>
+      <div class="field">
+        <label for="nom">Votre nom</label>
+        <input id="nom" name="nom" type="text" placeholder="Nom" required>
+      </div>
+    </div>
+
+    <div class="field">
+      <label for="sujet">Projet</label>
+      <input id="sujet" name="sujet" type="text" placeholder="Sujet bref" required>
+    </div>
+
+    <div class="field">
+      <label for="details">Détails</label>
+      <textarea id="details" name="details" rows="6" placeholder="Expliquez votre projet" required></textarea>
+    </div>
+
+    <p><button type="submit" class="btn primary big">Envoyer</button></p>
+    <p id="form-msg" class="small-muted"></p>
+  </form>
+</main>
+
+<footer class="footer-bottom">
+  <div class="footer-left">Designed by Mirado — HTML / CSS / JS</div>
+  <div class="footer-right">Tous droits réservés — 2025</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

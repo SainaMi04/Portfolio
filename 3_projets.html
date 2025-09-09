@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Projets - Mirado</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="header-top">
+  <div class="header-inner">
+    <div class="brand">
+      <span class="brand-first">Saina <strong>Mirado</strong></span>
+      <span class="brand-last">ANDRIASATARINTSOA</span>
+    </div>
+
+    <nav class="main-nav">
+      <a href="index.html" class="nav-link">Accueil</a>
+      <a href="2_apropos.html" class="nav-link">À propos</a>
+      <a href="3_projets.html" class="nav-link active">Projets</a>
+      <a href="4_competences.html" class="nav-link">Compétences</a>
+      <a href="5_contact.html" class="nav-link">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="projects-area">
+  <h2 class="page-title center-title">Mes projets</h2>
+
+  <div class="project-row">
+    <!-- Attrape la boule -->
+    <article class="project-card light-card">
+      <h3>Attrape la Boule</h3>
+      <p>Clique sur la boule qui apparaît dans la zone pour marquer des points en 10 secondes.</p>
+      <div class="game-box" id="catch-game-box" style="height:200px;">
+        <div id="ball"></div>
+        <p id="catch-result" class="small-muted"></p>
+        <button class="btn small" id="catch-start">Démarrer</button>
+      </div>
+    </article>
+
+    <!-- Devine le nombre -->
+    <article class="project-card light-card">
+      <h3>Devine le nombre</h3>
+      <p>Devine un nombre entre 1 et 10</p>
+      <div class="game-box" id="guess-box">
+        <p id="guess-instr">Choisis un nombre 1-10 puis clique Deviner</p>
+        <input id="guess-input" type="number" min="1" max="10" placeholder="1 - 10">
+        <button class="btn small" id="guess-btn">Deviner</button>
+        <p id="guess-feedback" class="small-muted"></p>
+      </div>
+    </article>
+
+    <!-- Quiz -->
+    <article class="project-card light-card">
+      <h3>Quiz</h3>
+      <p>Petit quiz Débutant</p>
+      <div class="game-box" id="quiz-box">
+        <p>Quel langage permet de manipuler le DOM ?</p>
+        <div class="quiz-answers">
+          <button class="btn small quiz-btn" data-answer="html">HTML</button>
+          <button class="btn small quiz-btn" data-answer="css">CSS</button>
+          <button class="btn small quiz-btn" data-answer="js">JavaScript</button>
+        </div>
+        <p id="quiz-result" class="small-muted"></p>
+      </div>
+    </article>
+  </div>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
